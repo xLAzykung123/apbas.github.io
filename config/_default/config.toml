@@ -1,18 +1,30 @@
-# Change baseurl before deploy
-baseurl = "https://demo.stack.jimmycai.com"
-languageCode = "en-us"
-title = "Hugo Theme Stack Starter"
+baseURL = "https://mynamissapbas.github.io/"
+languageCode = "th-th"
+title = "YourName Portfolio"
+theme = "hugo-theme-stack"
 
-# Theme i18n support
-# Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
-defaultContentLanguage = "en"
+[params]
+    mainSections = ["post"]
+    
+    [params.sidebar]
+        emoji = "🚀"
+        subtitle = "Computer Science Student"
+        [params.sidebar.avatar]
+            enabled = true
+            local = true
+            src = "img/avatar.jpg"
 
-# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage = false
+    [params.appearance]
+        defaultTheme = "dark"
 
-# Change it to your Disqus shortname before using
-disqusShortname = "hugo-theme-stack"
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
 
-[pagination]
-pagerSize = 5
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
