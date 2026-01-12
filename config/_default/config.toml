@@ -1,7 +1,10 @@
+[module]
+  [[module.imports]]
+    path = "github.com/CaiJimmy/hugo-theme-stack/v3"
 baseURL = "https://mynamissapbas.github.io/"
 languageCode = "th-th"
 title = "YourName Portfolio"
-theme = "hugo-theme-stack"
+
 
 [params]
     mainSections = ["post"]
